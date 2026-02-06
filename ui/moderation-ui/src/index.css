@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #8b5cf6;
+  --primary-dark: #6d28d9;
+  --surface: #1e293b;
+  --border: #6d28d9;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --accent: #ec4899;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #0d0d0d 100%);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #2d2d2d, #1f1f1f);
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #404040;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to right, #3d3d3d, #2f2f2f);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-ghost {
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(148, 163, 184, 0.1);
+  color: #cbd5e1;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-ghost:hover {
+  background-color: rgba(148, 163, 184, 0.2);
+  border-color: rgba(148, 163, 184, 0.3);
+  transform: translateY(-1px);
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(80, 80, 80, 0.5);
+  background-color: rgba(10, 10, 10, 0.8);
+  font-size: 0.875rem;
+  color: #f8fafc;
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #606060;
+  box-shadow: 0 0 0 3px rgba(96, 96, 96, 0.1);
+  background-color: rgba(20, 20, 20, 0.8);
+}
+
+.input-field::placeholder {
+  color: #707070;
+}
+
+.card {
+  background-color: rgba(20, 20, 20, 0.6);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(80, 80, 80, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  border-color: rgba(80, 80, 80, 0.5);
+}
