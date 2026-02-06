@@ -111,13 +111,6 @@ npm run dev
 
 Redis must be running on `localhost:6379`.
 
----
-
-## 📌 Status
-
-✅ Fully functional
-✅ Deployed
-🚧 Future work: auth, persistent metrics, real model weights
 
 ---
 
@@ -125,5 +118,6 @@ Redis must be running on `localhost:6379`.
 
 **Prerana M N**
 AI / ML • Systems • Backend Engineering
+
 
 
